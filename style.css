@@ -1,3 +1,18 @@
 body {
-  background-color: orange ;
+  background-color: black;
+  color: white;
+  padding: 30px;
+  font-family: monospace, "sans-serif";
+}
+
+#link {
+  font-size: 30px;
+  color: white;
+}
+
+#site-links ul{
+  list-style: none;
+}
+#site-links li{
+  display: inline;
 }
