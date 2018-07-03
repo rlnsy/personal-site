@@ -1,8 +1,13 @@
 body {
   background-color: black;
   color: white;
-  padding: 30px;
+  padding: 50px;
   font-family: monospace, "sans-serif";
+  line-height: 20px;
+}
+
+#bio {
+  max-width: 600px;
 }
 
 #link {
@@ -10,9 +15,23 @@ body {
   color: white;
 }
 
-#site-links ul{
-  list-style: none;
+#site-links {
+
+  ul{
+    list-style: none;
+  }
+  li{
+    display: inline;
+  }
 }
-#site-links li{
-  display: inline;
+
+#siteinfo {
+  position: fixed;
+  bottom: 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+a {
+  color: pink;
 }
