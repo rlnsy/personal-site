@@ -1,13 +1,25 @@
+@media screen and (max-width: 768px) {
+  #content {max-width: 360px;
+        padding: 10px;
+        color:cyan;}
+}
+
+@media screen and (max-width: 480px) {
+  #content {max-width: 300px;
+        padding: 5px;
+        color:pink;}
+}
+
+@media screen and (min-width: 768px) {
+  #content {max-width: 600px;
+        padding: 36px;}
+}
+
 body {
   background-color: #003366;
   color: white;
-  padding: 36px;
   font-family: monospace, "sans-serif";
   line-height: 20px;
-}
-
-#bio {
-  max-width: 600px;
 }
 
 #link {
@@ -25,12 +37,8 @@ body {
 }
 
 #siteinfo {
-  position: absolute;
-  bottom: 10px;
   margin-top: 10px;
-  text-align: left;
   font-size: 14px;
-  overflow: scroll;
 }
 
 #quote {
