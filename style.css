@@ -1,13 +1,6 @@
 @media screen and (max-width: 768px) {
-  #content {max-width: 360px;
-        padding: 10px;
-        color:cyan;}
-}
-
-@media screen and (max-width: 480px) {
-  #content {max-width: 300px;
-        padding: 5px;
-        color:pink;}
+  #content {max-width: 70%;
+        padding: 2%;}
 }
 
 @media screen and (min-width: 768px) {
