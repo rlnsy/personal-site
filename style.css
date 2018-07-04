@@ -16,22 +16,32 @@ body {
 }
 
 #site-links {
-  
-  ul{
+  ul {
     list-style: none;
   }
-  li{
+  li {
     display: inline;
   }
 }
 
 #siteinfo {
-  position: fixed;
+  position: absolute;
   bottom: 10px;
+  margin-top: 10px;
   text-align: left;
   font-size: 14px;
+  overflow: scroll;
+}
+
+#quote {
+  margin-left: 50px;
+  max-width: 500px;
 }
 
 a {
   color: pink;
+}
+
+html {
+  min-width: 550px;
 }
