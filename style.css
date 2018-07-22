@@ -1,23 +1,14 @@
-@media screen and (max-width: 768px) {
-  #content {max-width: 70%;
-        padding: 2%;}
-}
-
-@media screen and (min-width: 768px) {
-  #content {max-width: 600px;
-        padding: 36px;}
-}
-
-body {
-  background-color: #003366;
-  color: white;
-  font-family: monospace, "sans-serif";
-  line-height: 20px;
+footer {
+  position:fixed;
+  bottom:0px;
+  left:8px;
+  width:100%;
+  padding:8px;
 }
 
 #link {
   font-size: 30px;
-  color: white;
+  color: black;
 }
 
 #site-links {
@@ -29,20 +20,81 @@ body {
   }
 }
 
-#siteinfo {
-  margin-top: 10px;
-  font-size: 14px;
-}
-
-#quoterop {
-  margin-left: 50px;
-  max-width: 500px;
+#quotecontain {
+  display: none;
 }
 
 a {
-  color: pink;
+  color: #6600ff;
 }
 
 html {
-  min-width: 550px;
+  font-family: monospace, "sans-serif";
+}
+
+#experiment {
+  margin-left: 60px;
+  border-radius: 6px;
+  width: 450px;
+  height: 600px;
+  background-color: #6600ff;
+  float: left;
+}
+
+#exContent {
+  margin: 20px;
+  color: white;
+}
+
+/*
+  Content display for large screen
+*/
+@media screen and (min-width: 1024px) {
+  #content {
+    margin:0 auto;
+    margin-top: 100px;
+    width: 960px;
+  }
+  #info {
+    width: 450px;
+    height: 600px;
+    line-height: 20px;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 480px) {
+  #content {
+    margin:0 auto;
+    margin-top: 100px;
+    width: 480px;
+  }
+  #info {
+    width: 480px;
+    height: 600px;
+    /*background-color: #003366;*/
+    line-height: 20px;
+    float: left;
+  }
+  #experiment {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #content {
+    margin:0 auto;
+    margin-top: 50px;
+    width: 480px;
+  }
+  #info {
+    width: 400px;
+    height: 600px;
+    padding: 30px;
+    line-height: 20px;
+    float: left;
+  }
+  #experiment {
+    display: none;
+  }
 }
