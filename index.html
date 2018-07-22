@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="import" href="console/index.html">
+    <script src="https://unpkg.com/vue"></script>
   </head>
   <body>
     <div id="content">
@@ -25,18 +28,6 @@
             in the use and analysis of machine learning in modeling economies and human behaviour.
             I am currently working on developing an open-source application for managing and discovering news and content sources using the Reddit API.
           </p>
-          <div id="quotecontain">
-            <p>
-              A quote that I enjoy: <br>
-              <div id="quote">
-                <i>
-                  No man really knows about other human beings.
-                  The best he can do is to suppose that they are like himself
-                </i> <br>
-                <b> - John Steinbeck </b>
-              </div>
-            <p>
-          </div>
           <p>
             Don't hesitaste to follow any of the links below if you want to connect!
           </p>
@@ -55,7 +46,9 @@
 
       <div id="experiment">
         <div id = "exContent">
-          <p>Site Feature Coming Soon!</p>
+          <div id="console">
+            <p>{{ message }}</p>
+          </div>
         </div>
       </div>
 
@@ -67,5 +60,7 @@
       Can this page use improvement? <a href="mailto:inbox@rlindsay.me"> Let me know! </a>
     </p>
   </footer>
+
+  <script type="text/javascript" src="console.js"></script>
 
 </html>
