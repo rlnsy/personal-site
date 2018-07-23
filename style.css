@@ -48,7 +48,7 @@ html {
 @media screen and (min-width: 1024px) {
   #content {
     margin:0 auto;
-    margin-top: 100px;
+    margin-top: 50px;
     width: 960px;
   }
   #info {
@@ -62,13 +62,12 @@ html {
 @media screen and (max-width: 1024px) and (min-width: 480px) {
   #content {
     margin:0 auto;
-    margin-top: 100px;
+    margin-top: 50px;
     width: 480px;
   }
   #info {
     width: 480px;
     height: 600px;
-    /*background-color: #003366;*/
     line-height: 20px;
     float: left;
   }
@@ -77,10 +76,10 @@ html {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 480px){
   #content {
     margin:0 auto;
-    margin-top: 50px;
+    margin-top: 25px;
     width: 480px;
   }
   #info {
@@ -91,6 +90,52 @@ html {
     float: left;
   }
   #experiment {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  #content {
+    margin:0 auto;
+    margin-top: 5px;
+    width: 320px;
+  }
+  #info {
+    width: 300px;
+    height: 600px;
+    padding: 10px;
+    line-height: 20px;
+    float: left;
+  }
+  #experiment {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  footer {
+    display: none;
+  }
+  #link {
+    font-size: 70px;
+    color: #6600ff;
+  }
+}
+
+@media screen and (max-width: 319px) {
+  html {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 680px) {
+  #experiment {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  footer {
     display: none;
   }
 }
