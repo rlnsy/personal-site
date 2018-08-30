@@ -47,7 +47,14 @@
       <div id="experiment">
         <div id = "exContent">
           <div id="console">
-            <p>{{ message }}</p>
+            <ul>
+              <li v-for="line in lines" style="margin-bottom: 10px;">
+                <strong><i class="fas fa-caret-right" v-if="line.isCommand"></i></strong> {{ line.text }}
+              </li>
+              <li>
+                <strong><i class="fas fa-caret-right"></i></strong> <input v-model="dataEntered" @keyup.enter-key="submit"></input>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
