@@ -19,7 +19,13 @@
                     </div>
                     <div id="project" v-if="on_section('project')">
                         <h3> {{ sections['project'].title }} </h3>
-                        <p> {{ sections['project'].text }} </p>
+                        <ul>
+                            <project-item
+                                v-for="item in projects"
+                                v-bind:project="item"
+                                v-bind:key="item.id">
+                            </project-item>
+                        </ul>
                     </div>
                     <div id="links" v-if="on_section('links')">
                         <h3> {{ sections['links'].title }} </h3>

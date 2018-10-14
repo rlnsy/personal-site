@@ -1,8 +1,17 @@
+html {
+    font-family: "Andale Mono", Futura, monospace, "sans-serif";
+    background-color: cornflowerblue;
+}
+
 #window {
     width: 700px;
     height: 500px;
-    color: white;
-    background-color: #6600ff;
+    color: black;
+    background-color: white;
+    outline: black solid 2px;
+
+    font-size: 14px;
+
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%,-50%);
@@ -23,4 +32,15 @@
 
 #right_button {
     float: right;
+}
+
+#bottom button {
+
+    height: 30px;
+
+    outline: none;
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: "Andale Mono", Futura;
 }

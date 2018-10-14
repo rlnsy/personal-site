@@ -1,3 +1,11 @@
+Vue.component('project-item', {
+    props: ['project'],
+    template: '<li>' +
+        '<h4> {{ project.title }} </h4>' +
+        '<p> {{ project.description }} </p>' +
+        '</li>',
+});
+
 var app = new Vue({
     el: '#window',
     data: {
@@ -38,7 +46,31 @@ var app = new Vue({
                 left: "project",
                 title: "Links",
             }
-        }
+        },
+        projects: [
+            {
+                id: 0,
+                title: "Using Machine-Learning/Data-Science to Analyze and Discover Subreddits",
+                description: "Inspired by the problem of content/community bubbles in social " +
+                    "media and news sources, I set out to built a new sort of discovery platf" +
+                    "orm using findings and models from a scientifically-driven project. So f" +
+                    "ar, I have learned a tremendous amount about using and implementing usef" +
+                    "ul algorithms in Python and analyzing data, and have been able to simult" +
+                    "aneously flex my web-development muscles by building an interactive depl" +
+                    "oyment of said models – including an API for web or mobile use."
+            },
+            {
+                id: 1,
+                title: "Naughtify: Managing and Eliminating Mobile Distractions",
+                description: "Naughtify is an app for enhancing individual productivity and a" +
+                    "wareness by analyzing and managing mobile notifications. In this project" +
+                    " I used the cross-platform framework Flutter in conjunction with native " +
+                    "code for handling notification events, and learned loads about asynchron" +
+                    "ous programming and mobile-app paradigms. I ceased maintenance of the ap" +
+                    "p due to similarity in native iOS and Android functionality announced in" +
+                    " 2018."
+            }
+        ],
     },
     computed: {
         current: {
